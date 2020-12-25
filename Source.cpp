@@ -12,9 +12,11 @@ int main()
 			if ((a[i] - '0' + b[i] - '0') >= 10)
 				num++;
 		}
-		if (num > 0)
+		if (num > 1)
 			cout << num << " carry operations." << endl;
-		else
+		if (num == 0)
 			cout << "No carry operation." << endl;
+		if (num == 1)
+			cout << num << " carry operation." << endl;
 	}
 }
